@@ -184,6 +184,34 @@ nav a[aria-current="page"] {
   color: var(--paper);
 }
 
+.language-switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin: -1.7rem 0 2.8rem;
+  color: var(--muted);
+  font-size: .82rem;
+}
+
+.language-switch a {
+  padding: .2rem .55rem;
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  border-radius: 999px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.language-switch a:hover {
+  border-color: var(--gold);
+  color: var(--paper);
+}
+
+.language-switch a[aria-current="true"] {
+  border-color: color-mix(in srgb, var(--gold) 76%, transparent);
+  color: var(--paper);
+}
+
 .identity,
 .note {
   margin: 1.5rem 0;
